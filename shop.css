@@ -1,0 +1,135 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+  }
+  body{
+    font-family: "Poppins", sans-serif;
+  }
+  .links{
+    display: flex;
+    column-gap: 20px;
+    
+  }
+  .links a{
+    margin: 2px;
+    padding: 5px;
+    text-decoration: none;
+    color:#1D232c;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:wheat;
+    color:#1D232c;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    
+    
+    
+  }
+  .links :hover{
+    text-decoration:underline;
+    color: black;
+  }
+
+  
+  .navl{
+    margin-top: 30px;
+    z-index: 1;
+  }
+  .navl a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .navl a:hover{
+    cursor: pointer;
+    color: aliceblue;
+    text-decoration: underline;
+  }
+  .product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
+  }
+  .continer img{
+    height:220px;
+    width: 220px;
+    border-radius: 10px;
+
+  }
+  .continer:hover{
+    background-color: pink;
+    color:#1D232c;
+  }
+  
+  .continer{
+    width: 220px;
+    border: solid 1px black;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+   
+  }
+  .src input{
+    
+    background: transparent;
+    width:80%;
+    height: 30px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 20px;
+    outline: none;
+  }
+ 
+  .sarch{
+    position:relative;
+  }
+  .src{
+    text-align: center;
+  }
+  .src i{
+    position:absolute;
+    top: 30px;
+    left: 752px;
+  }
+  .end{
+    color: black;
+    padding: 20px;
+    background-color: #ffb07c;
+  }
+  .end i{
+    padding: 5px;
+    margin: 0px;
+    
+  }
+  .icons{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .end i:hover{
+    cursor: pointer;
+  }
+  body{
+    background-color: #cec3eb;
+  }
+  @media screen and (max-width:600px){
+    .continer{
+      flex-basis:20%;
+    }
+    .continer img{
+      height: 200px;
+      width: 200px;
+    }
+    .src i{
+      display: none;
+    }
+
+  }
+    
+ 
