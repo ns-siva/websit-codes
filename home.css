@@ -1,0 +1,254 @@
+
+  
+
+  *{
+    padding: 0px;
+    margin: 0px;
+  }
+  body{
+    font-family: "Poppins", sans-serif;
+  }
+  .links{
+    display: flex;
+    column-gap: 20px;
+    
+  }
+  .links a{
+    margin: 2px;
+    padding: 5px;
+    text-decoration: none;
+    color:#1D232c;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:wheat;
+    color:#1D232c;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    
+    
+    
+  }
+  .links :hover{
+    text-decoration:underline;
+    color: black;
+  }
+
+  .sidnav{
+    background-color: #1D232c;
+    width: 50%;
+    height: 100%;
+    position:fixed;
+    top: 0px;
+    left:-60%;
+    color: aliceblue;
+    padding: 20px;
+    transition: 2s;
+    
+  }
+  .navl{
+    margin-top: 30px;
+  }
+  .navl a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .navl a:hover{
+    cursor: pointer;
+    color: aliceblue;
+    text-decoration: underline;
+  }
+  .h{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+  }
+  .header button{
+background-color: #1D232c;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 10px;
+padding-bottom:10px;
+color: aliceblue;
+border-radius: 10px;
+cursor: pointer;
+  }
+  .heimg img{
+    height: 300px;
+    width: 300px;
+border-radius: 20px;
+    
+  }
+.header{
+    margin-top: 80px;
+}
+.serivice-cont{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.service-2-con{
+    display:flex;
+    padding: 20px;
+    align-items:center;
+    justify-content: center;
+    gap:50px;
+}
+.service-2-con .service-2{
+    background-color:#f2f4f7;
+    border-radius: 5px;
+    text-align: center;
+    color: #1D232c;
+}
+.arravial{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+    
+}
+
+.arival-cont:hover{
+  background-color:pink;
+  opacity:0px;
+}
+.arival-cont img{
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+
+}
+.arival-cont{
+    width: 220px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 3px;
+    margin: 10px; 
+    border-radius: 20px;
+    justify-content: space-around;
+    position: relative;
+}
+.arival-cont button{
+    width:80px;
+    height: 30px;
+    background-color: #1D232c;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.arival-cont button:hover{
+  cursor: pointer;
+}
+#h{
+  text-align: center;
+  background-color: #f2f4f7;
+}
+.news{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:#d3d3d3;
+  padding: 11px;
+}
+.news input{
+  padding: 10px;
+  width: 80vh;
+  border-radius: 20px;
+  border: solid 1px black;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.header a{
+  text-decoration: none;
+  color: #d3d3d3;
+}
+.news button{
+  width: 40vh;
+  padding: 5px;
+  top: 10px;
+  left: 1opx;
+  right: 10px;
+  bottom: 10px;
+  margin-bottom: 10px;
+  background-color:#553b29;
+  border-radius: 20px;
+  color: white;
+}
+.end{
+  color: black;
+  padding: 20px;
+  background-color: #ffb07c;
+}
+.end i{
+  padding: 5px;
+  margin: 0px;
+  
+}
+.icons{
+  display: flex;
+  justify-content: flex-end;
+}
+.end i:hover{
+  cursor: pointer;
+}
+body{
+  background-color: #cec3eb;
+}
+.model img{
+  display: none;
+}
+.servies{
+    
+  
+   padding: 20px;
+}
+
+  .tog{ 
+    display: flex;
+    margin-top: 3px;
+  }
+  .tog{
+    display: none;
+    transition: 3s;
+  }
+  @media  screen and (max-width:600px) {
+    .tog{
+        display:block;
+      }
+      .links{
+        display: none;
+      }
+      .heimg img{
+        display: none;
+        
+      }
+.servies{
+
+   display: none; 
+  }
+  .service-2-con{
+    flex-direction: column;
+  } 
+  .model img{
+    display: block;
+    border-radius: 20px;
+  }
+  .news input{
+    width: 400px;
+    background: none;
+  }
+  .arival-cont img{
+    height: 200px;
+    width: 200px;
+  }
+  .arival-cont {
+   flex-basis: 20%;
+  }
+ 
+  
+}
