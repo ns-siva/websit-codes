@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>existence</title>
+    <link rel="icon" href="pericon.jpeg">
+    <link rel="stylesheet" href="collecution.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <nav>
+        <h1>existence</h1>
+        <div class="links">
+            <a href="nastra.html">home</a>
+            <a href="collecution .html">collecution</a>
+            <a href="about.html">About</a>
+        </div>
+       
+    </nav>
+        
+            <div class="sarch">
+                <form class="src">
+                    <input type="text" placeholder="Expolor the existence" id="ns" onkeyup="chech(event)" >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+                
+            </div>
+            
+            <div class="product" id="prosec">
+                <div class="continer">
+                    <img src="per2cherry.jpeg" alt="11">
+                    <p>Red charry</p>
+                </div>
+                <div class="continer">
+                    <img src="per3ven.jkpeg.jpg" alt="11">
+                    <p>yellow fox</p>
+                </div>
+                <div class="continer">
+                    <img src="per4.jpeg" alt="11">
+                    <p>Royal pink</p>
+                </div>
+                <div class="continer">
+                    <img src="per5.jpeg" alt="11">
+                    <p>blue occen</p>
+                </div>
+                <div class="continer">
+                    <img src="per6.jpeg" alt="11">
+                    <p>the blood red</p>
+                </div>
+                <div class="continer">
+                    <img src="per7.jpeg" alt="11">
+                    <p>Bvl Gari</p>
+                </div>
+                <div class="continer">
+                    <img src="per8.jpeg" alt="11">
+                    <p>melt chooclet</p>
+                </div>
+                <div class="continer">
+                    <img src="per9.jpeg" alt="11">
+                    <p>the pink rose</p>
+                </div>
+                <div class="continer">
+                    <img src="per10.jpeg" alt="11">
+                    <p>the yellow wine</p>
+                </div>
+                <div class="continer">
+                    <img src="per1.jpeg" alt="11">
+                    <p>pink rose</p>
+                </div>
+                <div class="continer">
+                    <img src="per11.jpeg" alt="11">
+                    <p>Visconti Blue Ocean</p>
+                </div>
+                <div class="continer">
+                    <img src="per12.jpeg" alt="12">
+                    <p>RENEE Pink </p>
+                </div>
+                <div class="continer">
+                    <img src="per13.jpeg" alt="12">
+                    <p>Beardo Black Musk </p>
+                </div>
+                <div class="continer">
+                    <img src="per14.jpeg" alt="12">
+                    <p> White London</p>
+                </div>
+                <div class="continer">
+                    <img src="para15.jpeg" alt="12">
+                    <p> Vodka Brazil</p>
+                </div>
+                <div class="continer">
+                    <img src="para16.jpeg" alt="12">
+                    <p>  Di Gio </p>
+                </div>
+                <div class="continer">
+                    <img src="para17.jpeg" alt="12">
+                    <p>  WILD HOOk  </p>
+                </div>
+                <div class="continer">
+                    <img src="para18.jpeg" alt="12">
+                    <p>  Oud De Beirut   </p>
+                    
+                </div>
+                <div class="continer">
+                    <img src="para19.jpeg" alt="12">
+                    <p>Red Rouge</p>
+                
+                </div>
+                <div class="continer">
+                    <img src="parea20.jpeg" alt="12">
+                    <p>   Gray Eau De </p>
+                 
+                </div>
+              
+            </div>
+            <div class="end">
+                <h1>existence</h1>
+                <p>the all producut export frome the main branch of the japna and Australia </p>
+                <h5>@2025 existence.com</h5>
+                <div class="icons">
+               <i class="fa-brands fa-instagram">
+                
+               </i>
+        <i class="fa-brands fa-x"></i>   
+        <i class="fa-brands fa-youtube"></i>   
+        <i class="fa-brands fa-facebook"></i> 
+        <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+      
+</body>
+<script>
+    var prodect=document.getElementById("prosec") 
+    var sarch=document.getElementById("ns")
+    var prolist=prodect.querySelectorAll("div")
+    function chech(event){
+        var entervalue=event.target.value.toUpperCase()
+        for(count=0;count<prolist.length;count=count+1){
+            var productname=prolist[count].querySelector("p").textContent
+            if(productname.toUpperCase().indexOf(entervalue)<0){
+                prolist[count].style.display="none"
+            }
+            else{
+                prolist[count].style.display="block"
+            }
+        }
+    }
+</script>
+
+</html>
